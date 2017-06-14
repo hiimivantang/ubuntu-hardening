@@ -2,7 +2,7 @@
 
 #Access should be 644, Uid and Gid should be 0
 
-sudo /bin/sh -c 'echo "This system is owned by IMDA. All activities are being monitored. Unauthorized access or activity will be reported." > /etc/motd'
+sudo /bin/sh -c 'echo "This system is owned by <ORGANIZATION>. All activities are being monitored. Unauthorized access or activity will be reported." > /etc/motd'
 cat /etc/motd
 egrep '(\\v|\\r|\\m|\\s)' /etc/motd
 sudo chown root:root /etc/motd
